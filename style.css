@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* GENERAL */
+
+* {
+	margin: 0;
+	padding: 0;
+	background: #1a2639;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	color: white;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+p {
+	font-family: "Oxygen Mono", monospace;
+}
+
+/* MENU */
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10vh;
+	margin-left: 2rem;
+	margin-right: 1rem;
+}
+
+.menu a,
+.menu-items a {
+	text-decoration: none;
+	color: white;
+}
+
+.logo {
+	font-weight: 900;
+	font-size: 2rem;
+	cursor: default;
+}
+
+.menu-items {
+	display: none;
+	position: fixed;
+	justify-content: right;
+	align-items: center;
+	top: 10%;
+	left: 100;
+	width: 100%;
+	height: 90vh;
+	background: #1a2639;
+	opacity: 0;
+}
+
+.nav-links {
+	list-style: none;
+	font-weight: 800;
+	font-size: 4rem;
+	gap: 2rem;
+	margin-right: 5rem;
+}
+
+.menu-btn-wrapper {
+	display: flex;
+	width: 70px;
+	justify-content: flex-end;
+}
+
+.menu-btn {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-direction: column;
+	gap: 1rem;
+	width: 70px;
+	height: 50px;
+	background: white;
+	box-shadow: 0 10px 20px #3e4a61;
+	border-radius: 10px;
+}
+
+.menu-btn span {
+	height: 5px;
+	width: 50px;
+	border-radius: 4px;
+	margin: 0 10px;
+}
+
+.menu-btn span:first-child {
+	width: 35px;
+}
+
+/* SECTIONS */
+
+section {
+	height: 96vh;
+	margin: 0 10rem;
+	box-sizing: border-box;
+	min-height: fit-content;
+}
+
+.section-container {
+	display: flex;
+}
+
+.section-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 10vh;
+}
+
+.section-title::before,
+.section-title::after {
+	flex-grow: 1;
+	content: '\a0';
+	display: block;
+	height: 2px;
+	margin: 0 5rem;
+	position: relative;
+}
+
+.section-title::before {
+	margin-right: 2rem;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 30%);
+}
+
+.section-title::after {
+	margin-left: 2rem;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* PROFILE SECTION */
+
+#home {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 90vh;
+	margin: 0 0 0 5vw;
+	background-image: url("assets/laptop.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.profile-container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	width: 53%;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	font-weight: 800;
+	font-size: 4.5rem;
+}
+
+.text-container p {
+	font-size: 1.5rem;
+}
+
+.socials-container {
+	display: flex;
+	font-size: 2.5rem;
+	gap: 1.5rem;
+}
+
+/* ABOUT SECTION*/
+
+.about-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.arrow {
+	position: absolute;
+	top: 90vh;
+	left: 50vw;
+	font-size: 3rem;
+	background: transparent;
+}
+
+.pic-container {
+	display: flex;
+	height: 500px;
+	width: 500px;
+}

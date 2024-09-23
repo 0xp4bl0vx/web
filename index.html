@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+	<script src="https://kit.fontawesome.com/fe2da4287c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<nav class="menu">
+		<div class="logo">
+			<a href="#">Pablo</a>
+		</div>
+		<div class="menu-btn-wrapper">
+			<div class="menu-btn" onclick="toggleMenu()">
+				<span class="top-menu-bar"></span>
+				<span class="bottom-menu-bar"></span>
+			</div>
+		</div>
+	</nav>
+	<div class="menu-items">
+		<ul class="nav-links">
+			<li><a href="#about">About</a></li>
+			<li><a href="#certs">Certifications</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="/blog">Blog</a></li>
+		</ul>
+	</div>
+	<section id="home">
+		<div class="profile-container">
+			<div class="text-container">
+				<p>
+					Hi there!
+				</p>
+				<h1 class="title">
+					This is Pablo.<br>
+				</h1>
+				<p>
+					I'm a tech enthusiast with a passion for ethical hacking, dedicated to uncovering vulnerabilities
+					and fortifying digital landscapes.
+				</p>
+			</div>
+			<div class="socials-container">
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-github"></i>
+				<i class="fa-brands fa-linkedin"></i>
+				<i class="fa-solid fa-envelope"></i>
+			</div>
+		</div>
+		<i class="fa-solid fa-arrow-down arrow" onclick="location.href='#about'"></i>
+	</section>
+	<section id="about">
+		<h1 class="section-title">ABOUT ME</h1>
+		<div class="section-container">
+			<div class="about-container">
+				<div class="pic-container">
+					<img src="assets/profile.png" alt="Profile Picture">
+				</div>
+				<div class="text-container">
+					<p>
+						Hi there!
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="script.js"></script>
+</body>
+
+</html>
